@@ -4,8 +4,7 @@ import express from 'express';
 import cors from 'cors';
 import socketIO from 'socket.io';
 
-const server = new Server();
-
+const server = Server.instance;
 // BodyParser
 
 server.app.use(express.urlencoded({ extended: true }));
